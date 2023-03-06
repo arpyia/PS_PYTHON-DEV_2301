@@ -1,6 +1,6 @@
 # Desafio do Processo Seletivo Desenvolvedor Python
 
-Versão: 1.3
+Versão: 1.4
 
 ## Instruções
 
@@ -9,7 +9,7 @@ O propósito desse desafio é simular uma pequena parte de algumas atividades de
 A ferramenta escrita deve realizar as seguintes tarefas:
 - Ler e tratar os dados, padronizando seu tratamento no código
 - Ler os dados do diretório "dados", com a mesma estrutura e organização atual (incluindo os pedidos em .zip) - utilizaremos esse diretório para substituir os dados e testar sua solução
-- Processar cada arquivo de pedido individualmente, e forneça um resultado unificado
+- Processar cada arquivo de pedido individualmente e fornecer um resultado unificado (não analise todos os pedidos de uma única vez)
 - Determinar os seguintes dados para cada HUB:
     - Total de Pedidos Alocados: total de pedidos originalmente no hub
     - Total de Pedidos Redirecionados Recebidos: total de pedidos recebidos de outros hubs para entrega
@@ -36,6 +36,9 @@ Realize apenas após ter completado as tarefas 1 e 2: compare os resultados obti
 
 ### Tarefa 3
 Otimize a realocação de pedidos, de forma que ao ser realocado, a distância total "km_rota" seja mínima para cada pedido realocado (compute a distância total a partir da unidade original do pedido até a entrega).
+
+### Tarefa 4
+Implemente processamento dos arquivos de forma paralela com a standard lib do python. Considere criar um worker/cpu core. Importante: o resultado deve ser um único arquivo de output.
 
 ## Descrição dos Dados
 ### Municípios
