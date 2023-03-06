@@ -1,6 +1,6 @@
 # Desafio do Processo Seletivo Desenvolvedor Python
 
-Versão: 1.2
+Versão: 1.3
 
 ## Instruções
 
@@ -35,7 +35,7 @@ Faça um profile de tempo e memória do seu código, gerando gráficos de chama 
 Realize apenas após ter completado as tarefas 1 e 2: compare os resultados obtidos pelo profiling com os resultados da sua análise de complexidade.
 
 ### Tarefa 3
-Otimize a realocação de pedidos, de forma que ao ser realocado, a distância total "km_rota" seja mínima (compute a distância total a partir da unidade original do pedido até a entrega).
+Otimize a realocação de pedidos, de forma que ao ser realocado, a distância total "km_rota" seja mínima para cada pedido realocado (compute a distância total a partir da unidade original do pedido até a entrega).
 
 ## Descrição dos Dados
 ### Municípios
