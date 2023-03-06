@@ -1,6 +1,6 @@
 # Desafio do Processo Seletivo Desenvolvedor Python
 
-versão: 1.1
+Versão: 1.2
 
 ## Instruções
 
@@ -108,3 +108,6 @@ Colunas:
 - Prefira sempre um código claro e auto explicativo
 - Utilize laços com cautela, preferindo operações pandas e numpy sempre que possível
 - Antes de começar, `python -m this`
+- Acompanhe esse repositório para eventuais atualizações na descrição da tarefa
+- Qualquer dúvida entre em contato com nosso RH
+
