@@ -1,12 +1,14 @@
 # Desafio do Processo Seletivo Desenvolvedor Python
 
+versão: 1.1
+
 ## Instruções
 
 O propósito desse desafio é simular uma pequena parte de algumas atividades desenvolvidas nas tarefas diárias da equipe. Sua tarefa é desenvolver uma pequena ferramenta para auxiliar os gestores na operação de uma empresa de entregas. Considere que as unidades de distribuição operam todos os dias da semana, sem interrupção. Para realizar a tarefa, foram fornecidos um conjunto de dados descrevendo a localização das centrais de distribuição, os municípios atendidos pela empresa, as distâncias entre os municípios e os dados dos pedidos.
 
 A ferramenta escrita deve realizar as seguintes tarefas:
 - Ler e tratar os dados, padronizando seu tratamento no código
-- Ler os dados do diretório "dados", com a mesma estrutura e organização atual - utilizaremos esse diretório para substituir os dados e testar sua solução
+- Ler os dados do diretório "dados", com a mesma estrutura e organização atual (incluindo os pedidos em .zip) - utilizaremos esse diretório para substituir os dados e testar sua solução
 - Processar cada arquivo de pedido individualmente, e forneça um resultado unificado
 - Determinar os seguintes dados para cada HUB:
     - Total de Pedidos Alocados: total de pedidos originalmente no hub
@@ -35,7 +37,7 @@ Realize apenas após ter completado as tarefas 1 e 2: compare os resultados obti
 ### Tarefa 3
 Otimize a realocação de pedidos, de forma que ao ser realocado, a distância total "km_rota" seja mínima (compute a distância total a partir da unidade original do pedido até a entrega).
 
-## Dados
+## Descrição dos Dados
 ### Municípios
 | Município - UF                 |   COD mun |
 |:-------------------------------|----------:|
