@@ -1,6 +1,6 @@
 # Desafio do Processo Seletivo Desenvolvedor Python
 
-Versão: 1.4
+Versão: 1.5
 
 ## Instruções
 
@@ -50,6 +50,10 @@ Implemente processamento dos arquivos de forma paralela com a standard lib do py
 | Santo Antonio do Sudoeste - PR |   4124400 |
 | Ivatuba - PR                   |   4111605 |
 
+Colunas:
+- Município - UF: texto formatado e padrão conforme `f"{municipio} - {UF}"`
+- COD mun: código IGBE do município
+
 ### Distâncias
 |     org |    dest | km_linear          | km_rota      |
 |--------:|--------:|:-------------------|:-------------|
@@ -97,6 +101,10 @@ Colunas:
 |           3 |      251081 |      353570 |
 |           4 |      316671 |      410754 |
 
+Colunas:
+- Id Pedido: número de identificação do pedido
+- COD org: código do munícipio em que o pedido se encontra
+- COD dest: código do município para realização da entrega
 
 ## Forma de entrega:
 - Submeta o código em um repositório público, sem os dados
@@ -113,4 +121,11 @@ Colunas:
 - Antes de começar, `python -m this`
 - Acompanhe esse repositório para eventuais atualizações na descrição da tarefa
 - Qualquer dúvida entre em contato com nosso RH
+
+## Dicas para auxiliar na solução
+- Cuidado com espaços no começo e fim das strings durante o tratamento dos dados, isso pode impedir junções
+- Após ter encontrado o código do município das unidades de distribuição utilize ele para encontrar os pedidos que estão alocados para entrega no HUB
+- Um pedido está alocado à uma unidade de distribuição se seu `COD org` é o código do município de um HUB (encontrado por você)
+- Só é possível entregar um pedido caso seu `COD dest` está no intervalo `[COD inicial, COD final]` de algum hub
+- Só é possível repassar um pedido de uma unidade de distribuição para outra se o código da unidade de distribuição que vai receber o pedido está no intervalo `[COD inicial, COD final]` da unidade de distribuição que está repassando o pedido
 
